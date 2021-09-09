@@ -1,0 +1,37 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-container {
+  margin: 5rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition-duration: 1s ease;
+
+  &.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+}
+
+.slider-image {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.slider-container-left-arrow, .slider-container-right-arrow {
+  font-size: 3rem;
+  z-index: 10;
+  cursor: pointer;
+}

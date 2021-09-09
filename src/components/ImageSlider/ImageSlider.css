@@ -1,0 +1,9 @@
+.image-slider-container {
+  display: flex;
+}
+
+.image-slider-content {
+  width: 75%;
+  border-radius: 15px;
+  margin: 2rem;
+}

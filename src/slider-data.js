@@ -2,7 +2,7 @@ export const sliderData = [
   {
     "id": 1,
     "image": "1.jpg",
-    "alt": "Image One"
+    "alt": "Image One",
   },
   {
     "id": 2,

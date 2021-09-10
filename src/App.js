@@ -1,6 +1,6 @@
-import './App.scss';
 import ImageSlider from './components/ImageSlider/ImageSlider'
 import { sliderData } from './slider-data'
+import './App.scss';
 
 function App() {
   return (

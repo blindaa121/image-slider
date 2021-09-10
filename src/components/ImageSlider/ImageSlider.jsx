@@ -25,7 +25,6 @@ const ImageSlider = ({ slides }) => {
   const sliderImages = (
     slides.map((slide, idx) => {
       const { alt, image } = slide
-
       return (
         <div className={currentSlide === idx ? 'slide active' : 'slide'} key={idx} onClick={() => renderModal(slide)}>
           {currentSlide === idx && <img className='slider-image' alt={alt} src={`slider-assets/${image}`} />}
@@ -36,10 +35,10 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <div className='slider-container'>
-      <FaArrowAltCircleLeft className='slider-container-left-arrow slider-arrow' onClick={nextSlide} />
+      <FaArrowAltCircleLeft className='slider-container-left-arrow slider-arrow' onClick={prevSlide} />
       {showModal && <Modal content={modalContent} setShowModal={setShowModal} />}
       {sliderImages}
-      <FaArrowAltCircleRight className='slider-container-right-arrow slider-arrow' onClick={prevSlide} />
+      <FaArrowAltCircleRight className='slider-container-right-arrow slider-arrow' onClick={nextSlide} />
     </div>
   )
 }

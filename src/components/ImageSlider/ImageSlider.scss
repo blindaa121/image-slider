@@ -1,6 +1,6 @@
 .slider-container {
   margin: 5rem;
-  width: 80%;
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,8 +22,12 @@
 .slider-image {
   width: 80%;
   border-radius: 10px;
+  transition: 350ms ease;
 
-  &:hover { cursor: pointer; }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
 }
 
 .slider-container-left-arrow, .slider-container-right-arrow {
@@ -31,3 +35,4 @@
   z-index: 10;
   cursor: pointer;
 }
+
